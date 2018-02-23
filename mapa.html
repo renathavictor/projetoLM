@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Página Inicial</title>
+  <title>Localização do IFPB</title>
   <link href="https://fonts.googleapis.com/css?family=Gafata|Catamaran:700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,17 +12,21 @@
   <link rel="icon" href="img/tsi-logo.png">
 </head>
 <body>
-  <main class="layout-site">
+  <main class="layout-site" id="topo">
     <!-- Menu -->
   
     <nav class="menu">
       <ul>
         <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-        <li><a href="sobre-tsi.html">O Curso</a></li>
+        <li><a href="sobre-tsi.html">O Curso <i class="fa fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="sobre-tsi.html">Sobre o Curso</a></li>
+            <li><a href="horarios.html">Horários das aulas</i></a></li>
+            <li><a href="mapa.html">Mapa do IFPB</a></li>
+          </ul>
+        </li>
         <li><a href="links.html">Links úteis</a></li>
-        <li><a href="mapa.html">Mapa IFPB</a></li>
-        <li><a href="horarios.html">Horários</a></li>
-        <li><a href="contato.html">Contato</a></li>      
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
     <!-- Cabeçalho -->
@@ -36,9 +40,9 @@
       <header>
         <h1>Mapa do IFPB</h1>
       </header>
-      <div>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9165415580187!2d-34.87609318476986!3d-7.1356495948474175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1spt-BR!2sbr!4v1519219022640"
-          width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="mapa-box">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7917.8330761068655!2d-34.873904!3d-7.13565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1spt-BR!2sbr!4v1519399840850"
+          width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <section class="mapa-msg">
         <p>Mapa interno do IFPB em construção</p>
@@ -70,7 +74,9 @@
       </div>
 
     </footer>
-
+    <div class="topo-icon">
+      <a href="#topo"><i class="fa fa-chevron-up"></i></a>
+    </div>
   </main>
 </body>
 </html>

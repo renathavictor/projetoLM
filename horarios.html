@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Página Inicial</title>
+  <title>Horário das aulas</title>
   <link href="https://fonts.googleapis.com/css?family=Gafata|Catamaran:700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,25 +15,31 @@
   <link rel="icon" href="img/tsi-logo.png">
 </head>
 <body>
-  <main class="layout-site">
+  <main class="layout-site" id="topo">
+    
     <!-- Menu -->
-
     <nav class="menu">
       <ul>
         <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-        <li><a href="sobre-tsi.html">O Curso</a></li>
+        <li><a href="sobre-tsi.html">O Curso <i class="fa fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="sobre-tsi.html">Sobre o Curso</a></li>
+            <li><a href="horarios.html">Horários das aulas</i></a></li>
+            <li><a href="mapa.html">Mapa do IFPB</a></li>
+          </ul>
+        </li>
         <li><a href="links.html">Links úteis</a></li>
-        <li><a href="mapa.html">Mapa IFPB</a></li>
-        <li><a href="horarios.html">Horários</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
+
     <!-- Cabeçalho -->
     <header class="header-home header-horarios header-site">
       <section class="text-header">
         <h1>Horário das Aulas</h1>
       </section>
     </header>
+
     <!-- Conteúdo -->
     <main class="content-main content-horario">
 
@@ -50,80 +56,80 @@
               <div class="dropdown-content">
                 <main class="tabela">
                   <table>
-                        <thead>
-                          <th>P1</th>
-                          <th>Monday</th>
-                          <th>Terça</th>
-                          <th>Quarta</th>
-                          <th>Quinta</th>
-                          <th>Sexta</th>
-                          <th>Saturday</th>
-                          <th>Horário</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1ª</td>
-                            <td>Mat Aplic.</td>
-                            <td>Fund. Da Comp.</td>
-                            <td>Ling. Marcação</td>
-                            <td>Português</td>
-                            <td>Mat Aplic.</td>
-                            <td>--</td>
-                            <td>13:00</td>
-                          </tr>
-                          <tr>
-                            <td>2ª</td>
-                            <td>Mat Aplic.</td>
-                            <td>Fund. Da Comp.</td>
-                            <td>Ling. Marcação</td>
-                            <td>Português</td>
-                            <td>Mat Aplic.</td>
-                            <td>--</td>
-                            <td>13:50</td>
-                          </tr>
-                          <tr>
-                            <td>3ª</td>
-                            <td>APE</td>
-                            <td>Fund. Da Comp.</td>
-                            <td>APE</td>
-                            <td>Português</td>
-                            <td>Mat Aplic.</td>
-                            <td>--</td>
-                            <td>14:40</td>
-                          </tr>
-                          <tr>
-                            <td>4ª</td>
-                            <td>APE</td>
-                            <td>Fund. De Redes</td>
-                            <td>APE</td>
-                            <td>Fund. De Redes</td>
-                            <td>Ling. Marcação</td>
-                            <td>--</td>
-                            <td>15:50</td>
-                          </tr>
-                          <tr>
-                            <td>5ª</td>
-                            <td>APE</td>
-                            <td>Fund. De Redes</td>
-                            <td>--</td>
-                            <td>Fund. De Redes</td>
-                            <td>Ling. Marcação</td>
-                            <td>--</td>
-                            <td>16:40</td>
-                          </tr>
-                          <tr>
-                            <td>6ª</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>--</td>
-                            <td>17:30</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                  </main>
+                    <thead>
+                      <th>P1</th>
+                      <th>Monday</th>
+                      <th>Terça</th>
+                      <th>Quarta</th>
+                      <th>Quinta</th>
+                      <th>Sexta</th>
+                      <th>Saturday</th>
+                      <th>Horário</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1ª</td>
+                        <td>Mat Aplic.</td>
+                        <td>Fund. Da Comp.</td>
+                        <td>Ling. Marcação</td>
+                        <td>Português</td>
+                        <td>Mat Aplic.</td>
+                        <td>--</td>
+                        <td>13:00</td>
+                      </tr>
+                      <tr>
+                        <td>2ª</td>
+                        <td>Mat Aplic.</td>
+                        <td>Fund. Da Comp.</td>
+                        <td>Ling. Marcação</td>
+                        <td>Português</td>
+                        <td>Mat Aplic.</td>
+                        <td>--</td>
+                        <td>13:50</td>
+                      </tr>
+                      <tr>
+                        <td>3ª</td>
+                        <td>APE</td>
+                        <td>Fund. Da Comp.</td>
+                        <td>APE</td>
+                        <td>Português</td>
+                        <td>Mat Aplic.</td>
+                        <td>--</td>
+                        <td>14:40</td>
+                      </tr>
+                      <tr>
+                        <td>4ª</td>
+                        <td>APE</td>
+                        <td>Fund. De Redes</td>
+                        <td>APE</td>
+                        <td>Fund. De Redes</td>
+                        <td>Ling. Marcação</td>
+                        <td>--</td>
+                        <td>15:50</td>
+                      </tr>
+                      <tr>
+                        <td>5ª</td>
+                        <td>APE</td>
+                        <td>Fund. De Redes</td>
+                        <td>--</td>
+                        <td>Fund. De Redes</td>
+                        <td>Ling. Marcação</td>
+                        <td>--</td>
+                        <td>16:40</td>
+                      </tr>
+                      <tr>
+                        <td>6ª</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>17:30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </main>
               </div>
             </div>
 
@@ -608,7 +614,9 @@
       </div>
 
     </footer>
-
+    <div class="topo-icon">
+      <a href="#topo"><i class="fa fa-chevron-up"></i></a>
+    </div>
   </main>
 </body>
 </html>

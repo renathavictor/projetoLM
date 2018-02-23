@@ -24,6 +24,12 @@ button {
   cursor: pointer;
 }
 
+.topo-icon {
+  visibility: hidden;
+}
+
+
+
 /* ============= LAYOUT GRID ============= */
 
 .layout-home, .layout-site {
@@ -73,7 +79,23 @@ footer {
     margin: 50px 20px;
     padding: 20px;
   }
-  
+
+  .topo-icon {
+    visibility: visible;
+    background: linear-gradient(to top, #200122, #6f0000);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+  }
+
+  .topo-icon a {
+    color: #ececec;
+    font-size: 20px;
+  }  
 }
 
 
@@ -100,27 +122,53 @@ footer {
   text-transform: uppercase;
 }
 
-.menu li a:hover {
+.menu li:hover {
   background-color: #dc2f2f;
   transition: all 2.5s;
   cursor: pointer;
+}
+
+/* Esconder o submenu */
+ul.submenu {
+  display: none;
+}
+
+/* configuração submenu */
+.menu li:hover > ul.submenu {
+  display: block;
+}
+
+ul.submenu li a {
+  background-color: #ccc;
+  color: #222;
+  border-bottom: 1px solid #ececec;
+}
+
+ul.submenu li a:hover {
+  background-color: #b4b4b4;
 }
 
 
 @media all and (min-width:700px) {
   .menu ul {
     flex-flow: row;
-    justify-content: center;
-    margin-left: 20px;
+    justify-content: space-around;
   }
 
   .menu li {
     border-bottom: none;
     font-size: 1.1em;
-    width: 90px;
+    width: 100px;
     line-height: 50px;
   }
+
+  ul.submenu {
+    position: absolute;
+  }
   
+  ul.submenu li {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 900px) {
@@ -131,7 +179,11 @@ footer {
 
   .menu ul li {
     line-height: 3em;
-    width: 10%;
+    width: 150px;
+  } 
+
+  ul.submenu li {
+    width: 100%;
   }
 }
 
@@ -221,45 +273,6 @@ footer {
   }
 }
 
-@keyframes bounceIn {
-  from,
-  20%,
-  40%,
-  60%,
-  80%,
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  20% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-
-  40% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
-
-  60% {
-    opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
-
-  80% {
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-
 @media all and (min-width:700px) {
   .header-home .text-header {
     padding-top: 25%;
@@ -336,7 +349,7 @@ footer i {
 }
 
 .fa-github:hover {
-  color: rgb(255, 255, 255, 0.4);
+  color: rgb(165, 168, 167);
   transition: color 1s;
 }
 
@@ -638,7 +651,6 @@ iframe.mapa {
 
   iframe.mapa {
     margin: 1.5em;
-    /* width: 350px; tirei pois no outro não tem */
   }
  
 }
@@ -646,6 +658,11 @@ iframe.mapa {
 @media all and (min-width: 900px) {
   section#principal-contato {
     margin: 30px 15%;
+  }
+
+  .mapa-box {
+    width: 750px;
+    margin: auto;
   }
 }
 
