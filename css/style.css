@@ -162,6 +162,10 @@ footer {
   background-image: url(../img/maps.jpeg);
 }
 
+.header-horarios {
+  background-image: url(../img/unsplash.jpg);
+}
+
 .header-home .text-header, .header-sobre-tsi .text-header {
   color: #ececec;
   font-family: 'Catamaran', sans-serif;
