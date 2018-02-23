@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Página Inicial</title>
+  <link href="https://fonts.googleapis.com/css?family=Gafata|Catamaran:700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/tsi-logo.png">
+</head>
+<body>
+  <main class="layout-site">
+    <!-- Menu -->
+  
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="sobre-tsi.html">O Curso</a></li>
+        <li><a href="links.html">Links úteis</a></li>
+        <li><a href="mapa.html">Mapa IFPB</a></li>
+        <li><a href="horarios.html">Horários</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <!-- Cabeçalho -->
+    <header class="header-home header-contato header-site">
+      <section class="text-header">
+        <h1>Fale Conosco</h1>
+      </section>
+    </header>
+    <!-- Conteúdo -->
+    <main class="content-main content-contato">
+     
+      <section id="principal-contato" class="bg-white">
+        <p>Quer nos deixar uma mensagem? Possui alguma dúvida? Preencha o formulário abaixo que retornaremos o mais rápido possível!</p>
+        <form id="contato">
+          <label for="nome">Nome:</label>
+          <input class="form-edit" type="text" id="nome" placeholder="Nome e Sobrenome" autofocus>
+          <br>
+          <br>
+      
+          <label for="email">Email:</label>
+          <input class="form-edit" type="email" id="email" placeholder="nome@email.com" required>
+          <br>
+          <br>
+      
+          <label for="cidade">Estado:</label>
+          <select>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
+      
+          <br>
+          <br>
+      
+          <label for="curso">Estuda Sistemas para Internet?</label>
+          <br>
+          <input type="radio" name="curso">Sim
+          <br>
+          <input type="radio" name="curso">Não
+          <br>
+          <br>
+          <label for="mensagem">Mensagem:</label>
+          <br>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+          <br>
+          <button class="enviar" type="submit" from="contato" value="Enviar mensage"><i class="fa fa-paper-plane"></i>Enviar Mensagem
+          </button>
+          <br>
+      
+        </form>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <div class="info-footer sobre">
+        <h2>Sobre nós</h2>
+        <p>Site criado para a disciplina de Linguagem de Marcação do perído de 2017.2, foi utilizado HTML & CSS em sua criação. O projeto apresenta o curso de Sistemas para Internet com o enfoque no curso do IFPB. <br>Tudo aqui é fake ¯ \ _ (ツ) _ / ¯</p>
+      </div>
+      <div class="info-footer redes">
+        <h2 class="sociais">Siga-nos</h2>
+        <a href="#"><i class="fa fa-facebook-f"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="contato.html"><i class="fa fa-address-card"></i></a>
+      </div>
+      <div class="info-footer info-ifpb">
+        <h2>Coordenação do Curso</h2>
+        <p><i class="fa fa-phone"></i>Telefone: (83) 3612-1392</p>
+        <P><i class="fa fa-envelope"></i>E-mail: cstsi@ifpb.edu.br</P>
+        <p>Para informações reais acesse o site <a href="https://estudante.ifpb.edu.br/cursos/39" target="blank"><img src="img/ifpb.png" alt="logo ifpb"></a></p>
+      </div>
+      <div class="info-footer copy">
+        <p>Criado por Renatha Victor e Dhiego Bandeira</p>
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
