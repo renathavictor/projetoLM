@@ -102,14 +102,6 @@ table {
   background-color: #2C3845;
 }
 
-/* td:before {
-  content: attr(data-title);
-  color: #7a91aa;
-  font-size: 1.4rem;
-  padding-right: 10px;
-  display: block;
-} */
-
 thead th {
   background-color: #202932;
   color: #fff;
@@ -121,11 +113,11 @@ thead th {
 }
 
 .periodo2 {
-  margin-left: -65px;
+  margin-left: -70px;
 }
 
 .periodo3 {
-  margin-left: -120px;
+  margin-left: -125px;
 }
 
 .periodo4 {
@@ -133,11 +125,11 @@ thead th {
 }
 
 .periodo5 {
-  margin-left: -250px;
+  margin-left: -235px;
 }
 
 .periodo6 {
-  margin-left: -380px;
+  margin-left: -330px;
 }
 
 
@@ -153,6 +145,14 @@ thead th {
   
 
 @media all and (min-width: 1000px) {
+  .drop-period1 {
+    display: block;
+  }
+
+  .tabela {
+    width: 660px;
+  }
+
   table {
     display: table;
   }
