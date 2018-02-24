@@ -619,10 +619,6 @@ iframe.mapa {
 }
 
 @media all and (min-width: 700px) {
-  /* .content-contato {
-    flex-direction: row nowrap;
-  } mesmo da de baixo */
-  
   section#principal-contato {
     margin: 30px;
   }
