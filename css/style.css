@@ -171,7 +171,7 @@ ul.submenu li a:hover {
   }
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1000px) {
   .menu {
     position: fixed;
     width: 100%;
@@ -225,23 +225,6 @@ ul.submenu li a:hover {
   text-align: center;
   padding-top: 30%;
 }
-/* 
-.header-home .text-header h1 {
-  text-transform: uppercase;
-  animation: animatetop 1s;
-}
-
-@keyframes animatetop {
-  from {
-    margin-top:-300px;
-    opacity:0
-  } 
-  to {
-    top:0;
-    opacity:1;
-  }
-}
- */
 
 .header-home .text-header h1 {
   text-transform: uppercase;
@@ -284,13 +267,9 @@ ul.submenu li a:hover {
     font-size: 22px;
   }
 
-/*   .layout-home {
-    grid-template-rows: auto 600px auto auto;
-  }
- */
 }
 
-@media all and (min-width:900px) {
+@media all and (min-width:1000px) {
   .layout-home {
     grid-template-rows: auto 850px auto auto;
   }
@@ -332,7 +311,6 @@ footer .redes i {
   width: 40px;
   height: 40px;
   background-color: rgba(255,255,255,.03);
-
 }
 
 footer i {
@@ -387,7 +365,7 @@ footer .copy {
 
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1000px) {
   footer {
     grid-template-columns: 40% 30% 30%;
   }
@@ -438,7 +416,7 @@ h1.larger {
   margin: 50px;
 }
 
-@media all and (min-width:900px) {
+@media all and (min-width:1000px) {
   .conteiner {
     flex-direction: row;
   }
@@ -511,7 +489,7 @@ main.content-sobre-tsi h2, .txt-links h2 {
 
 }
 
-@media all and (min-width:900px) {
+@media all and (min-width:1000px) {
   .content-sobre-tsi {
     display: grid;
     grid-template-areas:
@@ -655,7 +633,7 @@ iframe.mapa {
  
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1000px) {
   section#principal-contato {
     margin: 30px 15%;
   }
@@ -770,7 +748,7 @@ iframe.videos {
 
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1000px) {
   div.flex-links {
     flex-flow: row wrap;
   }  
