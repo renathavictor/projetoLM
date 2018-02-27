@@ -128,6 +128,10 @@ footer {
   cursor: pointer;
 }
 
+.fa-home {
+  font-size: 1.4em;
+}
+
 /* Esconder o submenu */
 ul.submenu {
   display: none;
@@ -142,6 +146,7 @@ ul.submenu li a {
   background-color: #ccc;
   color: #222;
   border-bottom: 1px solid #ececec;
+  padding: auto 10px;
 }
 
 ul.submenu li a:hover {
@@ -190,7 +195,7 @@ ul.submenu li a:hover {
 /* ========= CABEÇALHOS  ========== */
 
 .header-home {
-  background-image: url(../img/pexels-blur.jpeg);
+  background-image: url(../img/pexels.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
