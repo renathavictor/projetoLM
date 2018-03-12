@@ -65,7 +65,7 @@ footer {
   .layout-site {
     display: grid;
     grid-template-columns: 0.8fr 8fr 0.8fr;
-    grid-template-rows: 50px 500px auto auto;
+    grid-template-rows: 2.5em 500px auto auto;
     grid-template-areas: 
         "menu menu menu"
         "header header header"
